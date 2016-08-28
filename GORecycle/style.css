@@ -3,9 +3,10 @@ body {
     font-size: 100%;
     color: #333;
     margin: 0 auto;
+    background: url(Sources/BACKGROUND.jpg) top repeat #fff;
 }
 
-.sidenav {
+.zsidenav {
     height: 100%;
     width: 0;
     position: fixed;
@@ -18,7 +19,7 @@ body {
     padding-top: 60px;
 }
 
-.sidenav a {
+.zsidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -27,14 +28,14 @@ body {
     transition: 0.3s
 }
 
-.sidenav a:hover, .offcanvas a:focus{
+.zsidenav a:hover, .offcanvas a:focus{
     color: #f1f1f1;
 }
 .active{
     background-color: black;
 }
 
-.sidenav .closebtn {
+.zsidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
@@ -42,12 +43,12 @@ body {
     margin-left: 50px;
 }
 
-#main {
+#zmain {
     /*transition: margin-left .5s;*/
 }
 /*Header Bar */
-.hd-bar {
-    background-color: #111;
+.zhd-bar {
+    background-color: dodgerblue;
     width: 100%;
     height: 2.5em;
     display: flex;
@@ -55,20 +56,34 @@ body {
     -moz-box-shadow: 1px 0.3em 1em -2px rgba(0,0,0,0.63);
     box-shadow: 1px 0.3em 1em -2px rgba(0,0,0,0.63);
 }
-.menu-btn {
+
+.zhd-bar img {
+    max-width: 6%;
+}
+
+.zmenu-btn {
     font-size:30px;
     cursor:pointer;
     color: white;
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .zsidenav {padding-top: 15px;}
+  .zsidenav a {font-size: 18px;}
 }
 
 .profile ,
 .resources,
 .transact,
+.quest,
+.achieve,
+.achieve1,
+.achieve2,
+.achieve3,
+.item-all,
+.a1gold,
+.a1bronze,
+.a1silver,
 .control-rsrc{
     display: block;
     float: left;
@@ -79,6 +94,7 @@ body {
     border: grey 0.2em solid;
     border-radius: 0.2em;
     padding: 0.1em;
+    background-color: white;
 }
 .profile div {
     float: left;
@@ -109,15 +125,19 @@ body {
     margin: 0;
 }
 
-.resources p img,
+.resources img,
 .control-rsrc span img{
     max-width: 20px;
 }
-
-#rsrc{
-    font-size: 1.3em;
-    font-weight: bold;
+.items {
+    max-width: 50%;
+    margin-left: 25%;
 }
+
+.items img {
+    
+}
+
 
 /*Control Layou*/
 .control-rsrc span {
@@ -128,6 +148,94 @@ body {
 .sub {
     max-width: 20px;
 }
+
+.login-main{
+    margin-top: 5%;
+    max-width: 30%;
+    margin-left: 35%;
+}
+
+.login_logo img{
+    max-width: 100%;
+    
+}
+
+.tr-cont {
+    max-width: 80%;
+    margin-left:10%;    
+}
+
+.tr-cont p {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+    
+
+
+
+.transact-table {
+    max-width: 50%;
+    margin-left: 25%;
+}
+
+.transact-table table,
+.transact-table  th, 
+.transact-table  tr, 
+.transact-table  td {
+   border: 1px solid black;
+   background-color: white;
+}
+
+.login-main form {
+    border: grey 0.2em solid;
+    margin-top: 5%;
+    background-color: white;
+}
+
+.form-signin {
+            max-width: 330px;
+            padding: 15px;
+            margin: 0 auto;
+            color: #017572;
+         }
+         
+         .form-signin .form-signin-heading,
+         .form-signin .checkbox {
+            margin-bottom: 10px;
+         }
+         
+         .form-signin .checkbox {
+            font-weight: normal;
+         }
+         
+         .form-signin .form-control {
+            position: relative;
+            height: auto;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 10px;
+            font-size: 16px;
+         }
+         
+         .form-signin .form-control:focus {
+            z-index: 2;
+         }
+         
+         .form-signin input[type="email"] {
+            margin-bottom: -1px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            border-color:#017572;
+         }
+         
+         .form-signin input[type="password"] {
+            margin-bottom: 10px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border-color:#017572;
+         }
+         
 
 
 

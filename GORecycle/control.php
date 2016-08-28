@@ -2,11 +2,8 @@
             <!--Get Details-->
             <p id="name" > <?php get_value("username"); ?> </p>
             <p id="credit"> Credits: <?php get_value("credits"); ?></p> 
-            <form action="login-action.php" method="post">
-                Username <input type="text" name="un"><br>
-                Password <input type="password" name="pw"><br>  
-                <input type="submit">
-            </form>
+			
+			
         </div>
     </div>
     <!--Resources Block-->
@@ -39,8 +36,87 @@
     </div>
     <!--Transact Block-->
     <div class="transact">
-        <<form action="transact-action.php">
-            <b>Client:</b> <input type="text" name="client_id">
+        <form action="transact-action.php" method="post">
+            
+			<h3>Material Exchange</h3>
+			<table>
+				<tr>
+					<th><b>Client ID:	</b></th>
+					<th><input type="text" name="client_id"></th>
+					<th></th>
+                                        <th><input btn btn-lg btn-primary btn-block type="submit" name="transact"></th>
+					
+				</tr>
+				<tr>
+					<th><hr></th>
+					<th><hr></th>
+					<th><hr></th>
+					<th><hr></th>
+				</tr>
+				<tr>
+					<th><b>Fiber (HQ):      	</b></th>
+					<th><input type="text" name="fhq"></th>
+					<th><b>Fiber (LQ):      	</b> </th>
+					<th><input type="text" name="flq"></th>
+                                        
+				</tr>
+				<tr>
+					<th><b>Fiber (Carton): 	</b></th>
+					<th><input type="text" name="fcr"></th>
+					<th><b>Fiber (Coated):  	</b></th>
+					<th><input type="text" name="fco"></th>
+				</tr>
+				<tr>
+					<th><hr></th>
+					<th><hr></th>
+					<th><hr></th>
+					<th><hr></th>
+				</tr>
+				<tr>
+					<th><b>Metal (Al):			</b></th>
+					<th><input type="text" name="al"></th>
+					<th><b>Metal (Fe):			</b></th>
+					<th><input type="text" name="fe"></th>
+				</tr>
+				<tr>
+					<th><hr></th>
+					<th><hr></th>
+					<th><hr></th>
+					<th><hr></th>
+				</tr>
+				<tr>
+					<th><b>Resin (HDPE):		</b></th>
+					<th><input type="text" name="hdpe"></th>
+					<th><b>Resin (LDPE):		</b></th>
+					<th><input type="text" name="ldpe"></th>
+				</tr>
+				<tr>
+					<th><b>Resin (PVC):		</b></th>
+					<th><input type="text" name="pvc"></th>
+				</tr>
+				<tr>
+					<th><hr></th>
+					<th><hr></th>
+					<th><hr></th>
+					<th><hr></th>
+				</tr>
+				<tr>
+					<th><b>Crystal (Grn):		</b></th>
+					<th><input type="text" name="grn"></th>
+					<th><b>Crystal (Bwn):		</b></th>
+					<th><input type="text" name="bwn"></th>
+				</tr>
+				<tr>
+					<th><b>Crystal (Clr):		</b></th>
+					<th><input type="text" name="clr">	</th>
+				</tr>
+                                
+                                
+            
+			</table>     
+                        
+                       
+             	
         </form>
     </div>
 

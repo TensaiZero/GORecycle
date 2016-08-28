@@ -7,6 +7,11 @@ function login($un, $pw){
     fetch_control($un, $pw);
 }
 login($un,$pw);
-header('Refresh:0; URL = index.php');
-//echo "<script>window.location.href = 'http://localhost/gorecycle/index.php'</script>";
+
+    //if(isset($_COOKIE['data'])) {
+            header('Refresh:0; URL = index.php');
+     //   }else{
+    //        header('Refresh:0; URL = loginfail.php');
+    //    }
+
 
